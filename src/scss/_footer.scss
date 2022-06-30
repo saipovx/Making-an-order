@@ -1,0 +1,112 @@
+footer{
+    height: 120px;
+    background: #F8F8F8;
+    padding: 20px;
+    border-top: 1px solid rgba(140, 140, 140, 1);
+
+    @media (max-width: $breakpoint1200) {
+        height: 100px;
+    }
+
+}
+
+.footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+
+    @media (max-width: $breakpoint768) {
+        flex-direction: column-reverse;
+        padding-bottom: 20px;
+   }
+
+
+    &-btn{
+        background-color: #FF0000;
+        box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.12), 0px 3px 1px rgba(0, 0, 0, 0.04), 0px 2px 0px rgba(149, 135, 128, 0.4);
+        border-radius: 4px;
+        padding: 21px 50px;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 29px;
+        line-height: 37px;
+        letter-spacing: 0.5px;
+        color: #FFFFFF;
+        transition: all ease 0.3s;
+
+        @media (max-width: $breakpoint1200) {
+             padding: 15px 30px;
+        }
+
+        @media (max-width: $breakpoint768) {
+            flex: 0 1 100%;
+            max-width: 100%;
+            width: 100%;
+            height: auto;
+            font-size: 20px;
+            padding: 8px 20px;
+            margin-top: 10px;
+       }
+
+       @media (max-width: $breakpoint375) {
+        font-size: 15px;
+   }
+
+        &:hover{
+            background-color: #ab0303af;
+        }
+    }
+
+    &-cont{
+        display: flex;
+        align-items: center;
+        gap: 100px;
+
+        @media (max-width: $breakpoint1450) {
+           gap: 10px;
+           flex-direction: column-reverse;
+        }
+
+        @media (max-width: $breakpoint480) {
+           gap: 5px;
+       }
+
+        & .btn-popap{
+            display: none;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 22px;
+            line-height: 18px;
+            color: 
+            rgba(6, 92, 194, 1);
+            @media (max-width: $breakpoint1450) {
+                display: block;
+            }
+
+            @media (max-width: $breakpoint480) {
+                font-size: 18px;
+            }
+        }
+
+        &-text{
+            font-style: normal;
+            font-weight: 400;
+            font-size: 22px;
+            line-height: 28px; 
+            color: #333333;
+
+            @media (max-width: $breakpoint480) {
+                font-size: 18px;
+            }
+        }
+
+        &-title{
+            font-style: normal;
+            font-weight: 700;
+            font-size: 35px;
+            line-height: 44px;
+            color: #333333;
+        }
+    }
+}

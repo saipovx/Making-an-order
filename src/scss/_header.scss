@@ -1,0 +1,21 @@
+// Header
+
+.header{
+    padding: 48px 0px 19px 30px;
+
+    @media (max-width: $breakpoint650) {
+       padding: 20px 0px 10px 0px;
+    }
+
+    &-title{
+        font-style: normal;
+        font-weight: 700;
+        font-size: 35px;
+        line-height: 44px;
+        color: #333333;
+
+        @media (max-width: $breakpoint650) {
+            font-size: 22px;
+        }
+    }
+}
